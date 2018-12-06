@@ -147,7 +147,7 @@ void LED_GreenBlink (void * pvParameters)
 	  const TickType_t xDelay = 250 / portTICK_PERIOD_MS;
 	  uint32_t GreenDelay = 0;
 	  const uint32_t TargetCount = 200000;
-
+	  xSemaphoreGive(LEDMutex);
 	  for(;;)
 	  {
 		  for (int i = 0; i <10; i++)

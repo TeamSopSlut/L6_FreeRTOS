@@ -79,7 +79,15 @@ int main(void)
 {
 
   /* USER CODE BEGIN 1 */
-
+	/*
+	HAL_GPIO_WritePin(LED_Red_GPIO_Port,LED_Red_Pin,GPIO_PIN_SET);
+	HAL_GPIO_WritePin(LED_Green_GPIO_Port,LED_Green_Pin,GPIO_PIN_SET);
+	HAL_GPIO_WritePin(LED_Blue_GPIO_Port,LED_Blue_Pin,GPIO_PIN_SET);
+	HAL_Delay(1);
+	HAL_GPIO_WritePin(LED_Red_GPIO_Port,LED_Red_Pin,GPIO_PIN_RESET);
+	HAL_GPIO_WritePin(LED_Green_GPIO_Port,LED_Green_Pin,GPIO_PIN_SET);
+	HAL_GPIO_WritePin(LED_Blue_GPIO_Port,LED_Blue_Pin,GPIO_PIN_SET);
+	*/
   /* USER CODE END 1 */
 
   /* MCU Configuration----------------------------------------------------------*/
